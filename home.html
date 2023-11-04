@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="/js/bootstrap.js"></script>
+    <title>Trecela</title>
+</head>
+<body>
+  
+<!-- Button trigger modal -->
+<button id="modalButton" type="button" class="btn btn-primary visually-hidden" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+  <div class="modal-header">
+    <span>
+      <i class="bi bi-check-circle-fill ps-2 pe-3 h3"></i>
+    </span>
+    <h5 class="modal-title text-center" id="exampleModalLabel1">You are logged in</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+</div>
+</div>
+</div>
+    <!-- Top header section  -->
+    <header>
+        <div class="free-shipping-head-slider justify-content-center d-flex text-light p-2">
+            <div class="d-sm-flex d-inline-block">
+                <div class="free-shipping px-1 text-uppercase fw-bold text-center">free shipping</div>
+                <div class="all-orders px-1 fw-lighter text-center">On all orders over $50+</div>
+            </div>
+        </div>
+        <!-- the nav section  -->
+        <div class="d-flex align-items-center py-3">
+            <!-- logo container -->
+            <div class="ps-2">
+                <img src="/images/Logo_-_185_x_50_nohalo_px_0903bc9a-d0fe-4c46-bdd8-489ae69f235e_150x.png" class="navbar-brand" alt="">
+            </div>
+            <div class="mx-auto"></div>
+            <!-- the cart, burger and search icon container  -->
+            <div class="d-flex align-items-center pe-2">
+                
+                <div class="mx-1 d-none d-md-block">
+                    <ul class="m-0 p-0 d-flex">
+                        <li class="d-inline mx-2">
+                            <a href="#" class="text-decoration-none text-secondary fs-5">Home</a>
+                        </li>
+                        <li class="d-inline mx-2">
+                            <a href="#" class="text-decoration-none text-secondary fs-5">About</a>
+                        </li>
+                        <li class="d-inline mx-2">
+                            <a href="#" class="text-decoration-none text-secondary fs-5">Celebrity</a>
+                        </li>
+                        <li class="d-inline mx-2">
+                            <a href="#" class="text-decoration-none text-secondary fs-5">Top</a>
+                        </li>
+                        <li class="d-inline mx-2">
+                            <a href="#" class="text-decoration-none text-secondary fs-5">User</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mx-1">
+                    <button class="h3 p-1 rounded-circle bg-transparent text-secondary border-0 d-md-none">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+                <div class="mx-1 d-md-none my-0">
+                    <button type="button" data-bs-toggle="offcanvas" data-bs-target="#lists" aria-controls="lists" class="h1 p-1 rounded-circle bg-transparent text-secondary border-0">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="lists" aria-labelledby="listsLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="listsLabel">Menu</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        ...
+                    </div>
+                    </div>
+                </div>
+                <div class="mx-1">
+                    <button type="button" data-bs-toggle="offcanvas" data-bs-target="#cart" aria-controls="cart" class="h3 p-1 rounded-circle bg-transparent text-secondary border-0">
+                        <i class="bi bi-bag"></i>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="cart" aria-labelledby="cartLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="cartLabel">Cart</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        ...
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- the header slider carousel -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item mb-sm-5 active">
+            <img src="/images/imgonline-com-ua-resize-td13lJMIcb_300x.png" class="xs-screens d-block d-sm-none w-100" alt="...">
+            <img src="/images/sm imgonline-com-ua-resize-td13lJMIcb_540x.png" class="sm-screens d-none d-sm-block d-md-none w-100" alt="...">
+            <img src="/images/lg imgonline-com-ua-resize-td13lJMIcb_1296x.png" class="lg-screens d-none d-md-block d-lg-none w-100" alt="...">
+            <img src="/images/xl imgonline-com-ua-resize-td13lJMIcb_2160x.png" class="xl-screens d-none d-lg-block w-100" alt="...">
+            <div class="carousel-caption d-block">
+              <h3 class="text-uppercase">welcome to trecela shopping store</h3>
+              <p class="h6">Clothes are your body's foundation</p>
+              <button class="mb-sm-5 btn btn-lg btn-dark rounded-pill text-uppercase" role="button">shop now</button>
+            </div>
+          </div>
+          <div class="carousel-item mb-sm-5">
+            <img src="/images/imgonline-com-ua-resize-MFImeaNvWaYeMU_1_1948_x_1200_360x.jpg" class="xs-screens d-block d-sm-none w-100" alt="...">
+            <img src="/images/sm imgonline-com-ua-resize-MFImeaNvWaYeMU_1_1948_x_1200_540x.jpg" class="sm-screens d-none d-sm-block d-md-none w-100" alt="...">
+            <img src="/images/lg imgonline-com-ua-resize-MFImeaNvWaYeMU_1_1948_x_1200_1296x.jpg" class="lg-screens d-none d-md-block d-lg-none w-100" alt="...">
+            <img src="/images/xl imgonline-com-ua-resize-MFImeaNvWaYeMU_1_1948_x_1200_2160x.jpg" class="xl-screens d-none d-lg-block w-100" alt="...">
+            <div class="carousel-caption d-block">
+              <p class="text-uppercase h6">shop women's</p>
+              <h3 class="text-uppercase mb-2">fashions</h3>
+              <button class="mb-sm-5 btn btn-lg btn-dark rounded-pill text-uppercase" role="button">shop now</button>
+            </div>
+          </div>
+          <div class="carousel-item mb-sm-5">
+            <img src="/images/imgonline-com-ua-resize-MigSNornvz_300x.jpg" class="xs-screens d-block d-sm-none w-100" alt="...">
+            <img src="/images/sm imgonline-com-ua-resize-MigSNornvz_540x.jpg" class="sm-screens  d-none d-sm-block d-md-none w-100" alt="...">
+            <img src="/images/lg imgonline-com-ua-resize-MigSNornvz_1296x.jpg" class="lg-screens  d-none d-md-block d-lg-none w-100" alt="...">
+            <img src="/images/xl imgonline-com-ua-resize-MigSNornvz_2160x.jpg" class="xl-screens  d-none d-lg-block w-100" alt="...">
+            <div class="carousel-caption d-block">
+              <p class="text-uppercase h6">shop men's</p>
+              <h3 class="text-uppercase mb-2">fashions</h3>
+              <button class="mb-sm-5 btn btn-lg btn-dark rounded-pill text-uppercase" role="button">shop now</button>
+            </div>
+          </div>
+          <div class="carousel-item mb-sm-5">
+            <img src="/images/imgonline-com-ua-resize-lEV8Kl5LpeU3jBcU_1800_x_1200_300x.jpg" class="xs-screens d-block d-sm-none w-100" alt="...">
+            <img src="/images/sm imgonline-com-ua-resize-lEV8Kl5LpeU3jBcU_1800_x_1200_540x.jpg" class="sm-screens  d-none d-sm-block d-md-none w-100" alt="...">
+            <img src="/images/lg imgonline-com-ua-resize-lEV8Kl5LpeU3jBcU_1800_x_1200_1296x.jpg" class="lg-screens  d-none d-md-block d-lg-none w-100" alt="...">
+            <img src="/images/xl imgonline-com-ua-resize-lEV8Kl5LpeU3jBcU_1800_x_1200_2160x.jpg" class="xl-screens  d-none d-lg-block w-100" alt="...">
+            <div class="carousel-caption d-block">
+              <p class="text-uppercase h6">technology</p>
+              <h3 class="text-uppercase mb-2">shop electronics</h3>
+              <button class="mb-sm-5 btn btn-lg btn-dark rounded-pill text-uppercase" role="button">shop now</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+    </header>
+    <!-- contents below the header section :) -->
+    <div class="container-fluid mt-5 border-top border-1 mb-5">
+        <div class="container mt-5 p-4">
+          <div class="w-100 text-center h2 fw-bold">
+            <div class=" m-auto" style="max-width: 75%;">
+              TRECELA STORE OFFER YOU THE MOST BEST PRODUCT YOU DESERVED
+            </div>
+          </div>
+          <div class="w-100 text-center h5 mt-4 fw-light">
+            We offer you products like Dresses, wrist watches, toys, pets, electronics and many more...
+          </div>
+          <div class="d-flex justify-content-center">
+            <button class="learn-more mt-3 mt-md-5 btn btn-lg btn-dark rounded-pill text-uppercase">learn more</button>
+          </div>
+        </div>
+    </div>
+
+    <div data-aos="fade-up" data-aos-duration="1000" class="">
+        <!-- for small screens  -->
+        <div class="container d-md-none">
+          <!-- Bath and beauty  -->
+          <div class="bathBeauty">
+            <!-- Bath and beauty image container div  -->
+            <div class="w-100">
+              <img src="/images/imgonline-com-ua-resize-4duAWBu9sgu_1200_x_800_720x.jpg" class="w-100" alt="">
+            </div>
+            <!-- Bath and beauty white box text & button  -->
+            <div class="wthBox mx-auto p-2 position-relative bg-light">
+              <div class="w-100 h-100 border border-dark border-2">
+              <div class="text-center h2 fw-light p-3">
+                BATH & BEAUTY
+              </div>
+              <div class="d-flex justify-content-center">
+                <button class="btn btn-dark rounded-pill">Shop now</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="bathBeauty">
+            <!-- Bath and beauty image container div  -->
+            <div class="w-100">
+              <img src="/images/imgonline-com-ua-resize-izq1pvTYVIHFVd5_1200_x_800_sports_n_outdoors_720x.jpg" class="w-100" alt="">
+            </div>
+            <!-- Bath and beauty white box text & button  -->
+            <div class="wthBox mx-auto p-2 position-relative bg-light">
+              <div class="w-100 h-100 border border-dark border-2">
+              <div class="text-center h2 fw-light p-3">
+                SPORTS & OUTDOORS
+              </div>
+              <div class="d-flex justify-content-center">
+                <button class="btn btn-dark rounded-pill">Shop now</button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- for larger screens  -->
+        <div class="d-none d-md-flex">
+          <div class="col-md-6 p-3">
+            <div class="bath-image d-flex justify-content-center align-items-center">
+              <div class="w-75 mx-auto p-2 position-relative bg-light">
+                <div class="w-100 h-100 border border-dark border-2">
+                <div class="text-center h2 fw-light p-3">
+                  BATH & BEAUTY
+                </div>
+                <div class="d-flex justify-content-center mb-2">
+                  <button class="btn btn-dark rounded-pill">Shop now</button>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 p-3">
+            <div class="sport-image d-flex justify-content-center align-items-center">
+              <div class="w-75 mx-auto p-2 position-relative bg-light">
+                <div class="w-100 h-100 border border-dark border-2">
+                <div class="text-center h2 fw-light p-3">
+                  SPORTS & OUTDOORS
+                </div>
+                <div class="d-flex justify-content-center">
+                  <button class="btn btn-dark rounded-pill mb-2">Shop now</button>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Nitches section  -->
+    <div class="mt-5 border-top mb-5">
+      <div class="container">
+          <h3 class="text-center my-5">SHOP BY CATEGORY</h3>
+          <div data-aos="fade-up" data-aos-duration="1000" class="row justify-content-center g-3">
+
+            <a href="#" class="col-6 col-md-3 text-decoration-none text-dark">
+              <div class="">
+                  <div class="nitches first-nitch mb-2">
+                    <div class="nitch-dark-mode w-100 h-100 d-flex justify-content-center align-items-center">
+                      <span class="bg-light p-1 small">ACCESSORIES</span>
+                    </div>
+                  </div>
+              </div>
+            </a>
+
+            <a href="#" class="col-6 col-md-3 text-decoration-none text-dark">
+              <div class="">
+                  <div class="nitches sec-nitch mb-2">
+                    <div class="nitch-dark-mode w-100 h-100 d-flex justify-content-center align-items-center">
+                      <span class="bg-light p-1 small">EQUIPMENTS</span>
+                    </div>
+                  </div>
+              </div>
+            </a>
+              
+            <a href="#" class="col-6 col-md-3 text-decoration-none text-dark">
+              <div class="">
+                <div class="nitches trd-nitch mb-2">
+                  <div class="nitch-dark-mode w-100 h-100 d-flex justify-content-center align-items-center">
+                    <span class="bg-light p-1 small">TOPS</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="col-6 col-md-3 text-decoration-none text-dark">
+              <div class="">
+                  <div class="nitches fth-nitch mb-2">
+                    <div class="nitch-dark-mode w-100 h-100 d-flex justify-content-center align-items-center">
+                      <span class="bg-light p-1 small">ELECTRONICS</span>
+                    </div>
+                  </div>
+              </div>
+            </a>
+            
+            <a href="#" class="col-6 col-md-3 text-decoration-none text-dark">
+            <div class="">
+              <div class="nitches fith-nitch mb-2">
+                <div class="nitch-dark-mode w-100 h-100 d-flex justify-content-center align-items-center">
+                  <span class="bg-light p-1 small">WOMEN</span>
+                </div>
+              </div>
+          </div>
+          </a>
+
+          <a href="#" class="col-6 col-md-3 text-decoration-none text-dark">
+          <div class="">
+              <div class="nitches sth-nitch mb-2">
+                <div class="nitch-dark-mode w-100 h-100 d-flex justify-content-center align-items-center">
+                  <span class="bg-light p-1 small">WATCHES</span>
+                </div>
+              </div>
+          </div>
+          </a>
+          
+          <a href="#" class="col-6 col-md-3 text-decoration-none text-dark">
+          <div class="">
+            <div class="nitches svth-nitch mb-2">
+              <div class="nitch-dark-mode w-100 h-100 d-flex justify-content-center align-items-center">
+                <span class="bg-light p-1 small">MEN</span>
+              </div>
+            </div>
+        </div>
+        </a>
+
+        <a href="#" class="col-6 col-md-3 text-decoration-none text-dark">
+        <div class="">
+            <div class="nitches eth-nitch mb-2">
+              <div class="nitch-dark-mode w-100 h-100 d-flex justify-content-center align-items-center">
+                <span class="bg-light p-1 small">BAGS</span>
+              </div>
+            </div>
+        </div>
+        </a>
+        
+              
+          </div>
+      </div>
+    </div>
+
+    <div class="p-md-5">
+      <div class="container d-md-none">
+        <div class="mt-5 d-flex flex-column align-items-center">
+          <a href="#">
+            <img src="/images/imgonline-com-ua-resize-6elu873nNC0JmAh_1296x.jpg" class="w-100" alt="">
+          </a>
+          <div class="wthBox2 p-2">
+            <div class="w-100 h-100 border border-2 border-dark">
+              <div class="text-center h2 py-4 fw-light">BAGS & SHOES</div>
+              <div class="d-flex justify-content-center">
+                <button class="btn btn-dark mx-auto mb-4 rounded-pill">SHOP NOW</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-none d-md-flex justify-content-center align-items-center">
+        
+        <div class="wthBox1 bg-light p-2 position-absolute">
+          <div class="w-100 h-100 border border-2 border-dark">
+            <div class="text-center h2 py-3 fw-light">
+              BAGS & SHOES
+            </div>
+            <div class="d-flex justify-content-center">
+              <button class="btn btn-dark mx-auto mb-4 rounded-pill">SHOP NOW</button>
+            </div>
+          </div>
+        </div>
+        <img src="/images/imgonline-com-ua-resize-6elu873nNC0JmAh_1296x.jpg" class="w-100" alt="">
+
+      </div>
+    </div>
+
+    <div class="mt-5 d-flex overflow-auto mb-5">
+        <div class="scrl1 bg-secondary m-2 d-flex align-items-center overflow-hidden flex-column">
+          <img src="/images/8a593a9755f689bfedf8374811d00916_360x.jpg" class="w-100" alt="">
+        </div>
+        <div class="scrl1 bg-secondary m-2 d-flex align-items-center overflow-hidden flex-column">
+          <img src="/images/3W846__A_360x.jpg" class="w-100" alt="">
+        </div>
+        <div class="scrl1 bg-secondary m-2 d-flex align-items-center overflow-hidden flex-column">
+          <img src="/images/4452744717117_360x.jpg" class="w-100" alt="">
+        </div>
+        <div class="scrl1 bg-secondary m-2 d-flex align-items-center overflow-hidden flex-column">
+          <img src="/images/8a593a9755f689bfedf8374811d00916_360x.jpg" class="w-100" alt="">
+        </div>
+    </div>
+
+    <div class="text-center h1 mt-5">
+      Object Oriented Programming
+    </div>
+
+    <script>
+      AOS.init();
+    </script>
+    <script src="/js/home.js" type="module"></script>
+</body>
+</html>

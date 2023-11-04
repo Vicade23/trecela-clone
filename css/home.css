@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.free-shipping-head-slider {
+  background: #051640;
+  font-size: 14px;
+}
+.free-shipping-head-slider .free-shipping {
+  letter-spacing: 1.5px;
+}
+.free-shipping-head-slider .all-orders {
+  font-size: 14px;
+}
+
+#carouselExampleCaptions .xs-screens {
+  height: 300px;
+}
+#carouselExampleCaptions .sm-screens {
+  height: 420px;
+}
+#carouselExampleCaptions .lg-screens {
+  height: 550px;
+}
+#carouselExampleCaptions .xl-screens {
+  height: 120vh;
+}
+#carouselExampleCaptions .carousel-caption button {
+  letter-spacing: 1.5px;
+  font-size: 13px;
+}
+
+.bathBeauty .wthBox {
+  width: 95%;
+  height: 160px;
+  top: -30px;
+}
+.bathBeauty .baths {
+  letter-spacing: 1.5px;
+  font-size: 13px;
+}
+
+@media (min-width: 767px) {
+  .bath-image {
+    height: 80vh;
+    background-image: url(/images/imgonline-com-ua-resize-4duAWBu9sgu_1200_x_800_720x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .sport-image {
+    height: 80vh;
+    background-image: url(/images/imgonline-com-ua-resize-izq1pvTYVIHFVd5_1200_x_800_sports_n_outdoors_720x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (min-width: 767px) and (min-width: 1010px) {
+  .bath-image {
+    height: 100vh;
+  }
+  .sport-image {
+    height: 100vh;
+  }
+}
+.nitches {
+  height: 270px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.5s;
+}
+.nitches::after {
+  content: "";
+  position: absolute;
+  height: inherit;
+  background-color: red;
+  z-index: auto;
+}
+
+.first-nitch {
+  background-image: url(/images/7a30853b0f107c7b55a8caa88687addd_360x.png);
+}
+
+.sec-nitch {
+  background-image: url(/images/data_3d8d3e48-e3d4-476e-a69b-72e18d70c4fc_360x.jpg);
+}
+
+.trd-nitch {
+  background-image: url(/images/mlt0410_black_1_360x\ \(1\).jpg);
+}
+
+.fth-nitch {
+  background-image: url(/images/4452744717117_360x.jpg);
+}
+
+.fith-nitch {
+  background-image: url(/images/inspire-faith-womens-hoodie-white-s-hoodies-605_360x.jpg);
+}
+
+.sth-nitch {
+  background-image: url(/images/RUNDOING-R3L-smart-watch-women-Blood-pressure-oxygen-monitor-with-game-function-multilingual-smartwatch-men-for_360x.jpg);
+}
+
+.svth-nitch {
+  background-image: url(/images/data_5e427d9b-ef2a-4a9e-98c4-f2270159616e_360x.jpg);
+}
+
+.eth-nitch {
+  background-image: url(/images/product-image-1309647754_360x.jpg);
+}
+
+.nitch-dark-mode {
+  background-color: rgba(160, 159, 159, 0.199);
+  transition: all 0.5s;
+}
+.nitch-dark-mode:hover {
+  background-color: rgba(77, 76, 76, 0.199);
+}
+
+.wthBox2 {
+  width: 95%;
+}
+
+.wthBox1 {
+  width: 50%;
+}
+
+.scrl1 {
+  width: 300px;
+  min-width: 200px;
+  height: 250px;
+}/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trecela Login</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <script src="/js/bootstrap.js"></script>
+</head>
+<body class="h-100 bg-light">
+
+<!-- Button trigger modal -->
+    <button id="modal-button" type="button" class="btn btn-primary visually-hidden" data-bs-toggle="modal" data-bs-target="#exampleModal"></button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span><i class="bi bi-exclamation-circle-fill ps-2 pe-4 h3"></i></span>
+          <h5 class="modal-title text-center" id="exampleModalLabel">Fill in all inputs</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    <main class="h-100 d-flex align-items-center justify-content-center">
+        <div class="container row justify-content-center">
+            <form id="form" class="h-100 text-center rounded shadow-lg col-12 col-sm-10 col-md-8 col-lg-6">
+                <h1 class="p-2 fw-bold mb-4">Login</h1> 
+                <div class="">
+
+                    <input type="email" id="email" class="col-9 mb-3 bg-light p-2 rounded border-0 border-bottom" placeholder="Email">
+
+                    <input type="password" id="password" class="col-9 mb-1 bg-light p-2 rounded border-0 border-bottom" placeholder="Password">
+                    <div id="email-error" class="mb-1 text-danger small"></div>
+                    <div id="password-error" class="mb-3 text-danger small"></div> 
+
+
+
+
+                    <input type="submit" class="col-9 mb-1 p-2 rounded border-0 border-bottom btn-dark rounded border-0" value="Login">
+                    <div class="mb-1 text-center small">
+                      <a href="#" id="forgot-password"></a>
+                    </div>
+
+                    <div class="text-center mb-3 small">
+                        Create account
+                        <span>
+                            <a href="/index.html">sign up</a>
+                        </span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script>
+      AOS.init();
+    </script>
+    <script src="/js/login.js" type="module"></script>
+</body>
+</html>
